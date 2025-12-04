@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Studio Mini</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Studio Mini</h1>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/catalog">Каталог</a>
+    </nav>
+</header>
+
+<div class="container fade-in">
+
+    <img src="{{ url_for('static', filename='images/model_studiomini.jpg') }}" class="product-image-big">
+
+    <h2>Описание</h2>
+    <p>
+        Studio Mini — компактный, тихий и стабильный принтер начального уровня.
+        Отлично подходит для обучения, хобби и простых инженерных задач.
+    </p>
+
+    <h2>Характеристики</h2>
+    <ul>
+        <li>Область печати: 180×180×180 мм</li>
+        <li>Лёгкая система калибровки</li>
+        <li>Низкий уровень шума</li>
+        <li>Поддержка PLA/PETG</li>
+        <li>Металлическая рама</li>
+    </ul>
+
+    <a class="btn" href="#">Заказать</a>
+
+</div>
+
+<footer>© 2025 3D Printer Shop</footer>
+
+</body>
+</html>

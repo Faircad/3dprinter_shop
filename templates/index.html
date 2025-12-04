@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Printer Shop — Главная</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>3D Printer Shop</h1>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/catalog">Каталог</a>
+        <a href="/about">О компании</a>
+        <a href="/contact">Контакты</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Добро пожаловать в магазин 3D-принтеров</h2>
+    <p>Мы производим высокоточные 3D-принтеры с автоматической калибровкой потока. 
+       Ознакомьтесь с каталогом и выберите модель, подходящую именно вам.</p>
+
+    <div class="product">
+
+    <img src="{{ url_for('static', filename='images/printer_front1.jpg') }}" alt="3D printer" class="home-main-image">
+
+        <div>
+            <h3></h3>
+            <p></p>
+            <p class="price"></p>
+            <a class="btn" href="/catalog">Перейти в каталог</a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

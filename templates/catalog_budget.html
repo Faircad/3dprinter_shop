@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Бюджетные 3D-принтеры</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Бюджетные 3D-принтеры</h1>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/catalog">Каталог</a>
+    </nav>
+</header>
+
+<div class="container fade-in">
+
+    <h2>Модели в данной категории</h2>
+
+    <div class="catalog">
+        
+        <a class="card" href="/product/studiomini">
+            <img src="{{ url_for('static', filename='images/model_studiomini.jpg') }}" class="card-img">
+            <h3>Studio Mini</h3>
+            <p>Лёгкий, компактный и доступный принтер начального уровня.</p>
+        </a>
+
+        <a class="card" href="/product/industroprint_s240">
+            <img src="{{ url_for('static', filename='images/model_industroprint_s240.jpg') }}" class="card-img">
+            <h3>IndustroPrint S240</h3>
+            <p>Бюджетное решение для стабильной и тихой печати.</p>
+        </a>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

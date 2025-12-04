@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>IndustroPrint S240</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>IndustroPrint S240</h1>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/catalog">Каталог</a>
+    </nav>
+</header>
+
+<div class="container fade-in">
+
+    <img src="{{ url_for('static', filename='images/model_industroprint_s240.jpg') }}" class="product-image-big">
+
+    <h2>Описание</h2>
+    <p>
+        IndustroPrint S240 — CoreXY-принтер с закрытой камерой и системой фильтрации.
+        Высокая стабильность печати и скорость до 500 мм/с делают его идеальным
+        решением для профессиональных задач.
+    </p>
+
+    <h2>Характеристики</h2>
+    <ul>
+        <li>Область печати: 240×240×300 мм</li>
+        <li>Закрытая камера + фильтр</li>
+        <li>Кинематика CoreXY</li>
+        <li>Максимальная скорость 500 мм/с</li>
+        <li>Печатная голова легкого веса</li>
+    </ul>
+
+    <a class="btn" href="#">Заказать</a>
+
+</div>
+
+<footer>© 2025 3D Printer Shop</footer>
+
+</body>
+</html>

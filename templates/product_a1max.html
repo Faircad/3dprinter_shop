@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>A1 Max</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>A1 Max</h1>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/catalog">Каталог</a>
+    </nav>
+</header>
+
+<div class="container fade-in">
+
+    <img src="{{ url_for('static', filename='images/model_a1max.jpg') }}" class="product-image-big">
+
+    <h2>Описание</h2>
+    <p>
+        A1 Max — увеличенная версия A1 Pro с рабочей зоной среднего формата.
+        Идеален для архитектурных макетов, технических деталей и серийной печати.
+    </p>
+
+    <h2>Характеристики</h2>
+    <ul>
+        <li>Область печати: 320×320×400 мм</li>
+        <li>Усиленная алюминиевая рама</li>
+        <li>Автокалибровка по 64 точкам</li>
+        <li>Скорость до 400 мм/с</li>
+        <li>Совместимость с инженерными материалами</li>
+    </ul>
+
+    <a class="btn" href="#">Заказать</a>
+
+</div>
+
+<footer>© 2025 3D Printer Shop</footer>
+
+</body>
+</html>

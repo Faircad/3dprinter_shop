@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог — 3D Printer Shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <h1>Каталог</h1>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/about">О компании</a>
+        <a href="/contact">Контакты</a>
+    </nav>
+</header>
+
+<div class="container fade-in">
+
+    <h2>Разделы каталога</h2>
+
+    <div class="category-grid">
+
+        <a href="/catalog/fdm" class="category-card">
+            <img src="{{ url_for('static', filename='images/cat_fdm.jpg') }}" alt="FDM">
+            <h3>FDM / FFF принтеры</h3>
+        </a>
+
+        <a class="category-card" href="/catalog/budget">
+           <img class="category-budget" src="{{ url_for('static', filename='images/cat_budget.jpg') }}" alt="">
+           <h3>Бюджетные 3D-принтеры</h3>
+        </a>
+
+
+        <a href="/catalog/pro" class="category-card">
+            <img src="{{ url_for('static', filename='images/cat_pro.jpg') }}" alt="Pro">
+            <h3>Профессиональные FDM-принтеры</h3>
+        </a>
+
+        <a href="/catalog/materials" class="category-card">
+            <img src="{{ url_for('static', filename='images/cat_materials.jpg') }}" alt="Materials">
+            <h3>Материалы и пластики</h3>
+        </a>
+
+        <a href="/catalog/parts" class="category-card">
+            <img src="{{ url_for('static', filename='images/cat_parts.jpg') }}" alt="Parts">
+            <h3>Комплектующие и аксессуары</h3>
+        </a>
+
+        <a href="/catalog/service" class="category-card">
+            <img src="{{ url_for('static', filename='images/cat_service.jpg') }}" alt="Service">
+            <h3>Калибровка и обслуживание</h3>
+        </a>
+
+        <a href="/blog" class="category-card">
+            <img src="{{ url_for('static', filename='images/cat_blog.jpg') }}" alt="Blog">
+            <h3>Блог — обучение / гайды</h3>
+        </a>
+
+    </div>
+
+</div>
+
+<footer>© 2025 3D Printer Shop</footer>
+
+</body>
+</html>

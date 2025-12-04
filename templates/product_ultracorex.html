@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>UltraCore X</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>UltraCore X</h1>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/catalog">Каталог</a>
+    </nav>
+</header>
+
+<div class="container fade-in">
+
+    <img src="{{ url_for('static', filename='images/model_ultracorex.jpg') }}" class="product-image-big">
+
+    <h2>Описание</h2>
+    <p>
+        UltraCore X — профессиональный принтер с кинематикой CoreXY
+        и максимальной точностью позиционирования. Отлично подходит для
+        инженерных задач, промышленных изделий и длительной печати.
+    </p>
+
+    <h2>Характеристики</h2>
+    <ul>
+        <li>Область печати: 350×350×350 мм</li>
+        <li>Кинематика CoreXY</li>
+        <li>Датчики линейного позиционирования</li>
+        <li>Скорость 500 мм/с</li>
+        <li>Поддержка материалов до 300°C</li>
+    </ul>
+
+    <a class="btn" href="#">Заказать</a>
+
+</div>
+
+<footer>© 2025 3D Printer Shop</footer>
+
+</body>
+</html>

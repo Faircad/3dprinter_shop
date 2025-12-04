@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>TitanForge X500</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>TitanForge X500</h1>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/catalog">Каталог</a>
+    </nav>
+</header>
+
+<div class="container fade-in">
+
+    <img src="{{ url_for('static', filename='images/model_titanforge_x500.jpg') }}" class="product-image-big">
+
+    <h2>Описание</h2>
+    <p>
+        TitanForge X500 — промышленный принтер с огромной рабочей зоной и нагреваемой камерой.
+        Идеален для печати крупногабаритных изделий из инженерных материалов.
+    </p>
+
+    <h2>Характеристики</h2>
+    <ul>
+        <li>Область печати: 500×500×600 мм</li>
+        <li>Камера с нагревом до 60°C</li>
+        <li>Ходовой винт высокой точности</li>
+        <li>Температура хотэнда до 350°C</li>
+        <li>Датчик вибро-калибровки</li>
+    </ul>
+
+    <a class="btn" href="#">Заказать</a>
+
+</div>
+
+<footer>© 2025 3D Printer Shop</footer>
+
+</body>
+</html>

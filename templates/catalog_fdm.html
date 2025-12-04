@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>FDM / FFF принтеры</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>FDM / FFF принтеры</h1>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/catalog">Каталог</a>
+    </nav>
+</header>
+
+<div class="container fade-in">
+
+    <h2>Модели в данной категории</h2>
+
+    <div class="catalog">
+        
+        <a class="card" href="/product/a1pro">
+            <img src="{{ url_for('static', filename='images/model_a1pro.jpg') }}" class="card-img">
+            <h3>A1 Pro</h3>
+            <p>Высокоточный принтер с автокалибровкой и стабильной механикой.</p>
+        </a>
+
+        <a class="card" href="/product/a1max">
+            <img src="{{ url_for('static', filename='images/model_a1max.jpg') }}" class="card-img">
+            <h3>A1 Max</h3>
+            <p>Увеличенная версия A1 с рабочей зоной среднего формата.</p>
+        </a>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

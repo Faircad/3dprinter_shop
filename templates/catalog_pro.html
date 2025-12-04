@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Профессиональные FDM-принтеры</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Профессиональные FDM-принтеры</h1>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/catalog">Каталог</a>
+    </nav>
+</header>
+
+<div class="container fade-in">
+
+    <h2>Модели в данной категории</h2>
+
+    <div class="catalog">
+
+        <a class="card" href="/product/titanforge_x500">
+            <img src="{{ url_for('static', filename='images/model_titanforge_x500.jpg') }}" class="card-img">
+            <h3>TitanForge X500</h3>
+            <p>Промышленная модель большого объёма с нагреваемой камерой.</p>
+        </a>
+
+        <a class="card" href="/product/proline_m330">
+            <img src="{{ url_for('static', filename='images/model_proline_m330.jpg') }}" class="card-img">
+            <h3>ProLine M330</h3>
+            <p>Точная механика, высокая жёсткость и поддержка инженерных материалов.</p>
+        </a>
+
+        <a class="card" href="/product/ultracorex">
+            <img src="{{ url_for('static', filename='images/model_ultracorex.jpg') }}" class="card-img">
+            <h3>UltraCore X</h3>
+            <p>CoreXY с максимальной скоростью и точностью позиционирования.</p>
+        </a>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

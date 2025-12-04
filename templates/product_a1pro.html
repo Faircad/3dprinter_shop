@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>A1 Pro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>A1 Pro</h1>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/catalog">Каталог</a>
+    </nav>
+</header>
+
+<div class="container fade-in">
+
+    <img src="{{ url_for('static', filename='images/model_a1pro.jpg') }}" class="product-image-big">
+
+    <h2>Описание</h2>
+    <p>
+        A1 Pro — высокоточный FDM-принтер для профессиональной и бытовой 3D-печати.
+        Оснащён автоматической калибровкой потока и стола. Подходит для прототипирования,
+        инженерных задач и серийного производства небольших партий.
+    </p>
+
+    <h2>Характеристики</h2>
+    <ul>
+        <li>Область печати: 240×240×250 мм</li>
+        <li>Автоматическая калибровка потока</li>
+        <li>Скорость печати до 350 мм/с</li>
+        <li>Корпус с виброизоляцией</li>
+        <li>Поддержка PLA, PETG, ABS, TPU</li>
+    </ul>
+
+    <a class="btn" href="#">Заказать</a>
+
+</div>
+
+<footer>© 2025 3D Printer Shop</footer>
+
+</body>
+</html>

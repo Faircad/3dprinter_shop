@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ProLine M330</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>ProLine M330</h1>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/catalog">Каталог</a>
+    </nav>
+</header>
+
+<div class="container fade-in">
+
+    <img src="{{ url_for('static', filename='images/model_proline_m330.jpg') }}" class="product-image-big">
+
+    <h2>Описание</h2>
+    <p>
+        ProLine M330 — профессиональный принтер с усиленной стальной рамой
+        и точной системой линейного позиционирования.
+        Подходит для инженерных деталей и длительной печати.
+    </p>
+
+    <h2>Характеристики</h2>
+    <ul>
+        <li>Область печати: 330×330×400 мм</li>
+        <li>Усиленная стальная кинематика</li>
+        <li>Температура хотэнда до 320°C</li>
+        <li>Датчики линейного перемещения</li>
+        <li>Скорость печати до 450 мм/с</li>
+    </ul>
+
+    <a class="btn" href="#">Заказать</a>
+
+</div>
+
+<footer>© 2025 3D Printer Shop</footer>
+
+</body>
+</html>
